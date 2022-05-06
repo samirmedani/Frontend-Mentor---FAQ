@@ -13,9 +13,7 @@ allCross.forEach(element => {
         console.log(currentChoice);
 
         currentChoice.classList.toggle("answerVisible") 
-
-
-        
+        // sss
     })
 
 })
