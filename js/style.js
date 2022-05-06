@@ -1,4 +1,4 @@
-const allCross = document.querySelectorAll('.hyper-container-question');
+const allCross = document.querySelectorAll('.ask');
 
 
 console.log(allCross);
@@ -10,10 +10,15 @@ allCross.forEach(element => {
 
 
         const currentChoice = this.children[1];
-        console.log(currentChoice);
+
+        const arrow = this.children[0].children[1];
+        const bold = this.children[0].children[0];
+
 
         currentChoice.classList.toggle("answerVisible") 
-        // sss
+        arrow.classList.toggle("arrowRotate")
+
+        bold.classList.toggle("bold")
     })
 
 })
