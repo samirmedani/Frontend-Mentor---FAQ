@@ -9,16 +9,20 @@
     --blue: hsl(240, 73%, 65%);
     --purple: hsl(273, 75%, 66%); 
     --softred: hsl(14, 88%, 65%);
+    --bar: hsl(240, 5%, 91%);
 }
 
 
 
 body {
+    font-family: 'Kumbh Sans', sans-serif;
     min-height: 100vh;
     background: linear-gradient(var(--purple), var(--blue)) no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 0.9rem;
+    font-weight: 400;
     
 }
 
@@ -27,14 +31,18 @@ body {
     padding: 2em;
     border-radius: 15px;
     background-color: white;
-    width: 50%;
+    width: 1000px;
+    
+
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     
     .container-text {
         width: 50%;
-        
+        height: 100%;
         .ask {
+            border-bottom: 1px solid var(--bar);
             cursor: pointer;
 
             .container-question {
@@ -49,7 +57,7 @@ body {
             }
 
             .container-answer {
-                padding-bottom: 16px;
+                margin-bottom: 16px;
             }
 
         }
@@ -57,8 +65,15 @@ body {
         
     } 
 }
-    
+  
 
+
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+
+}
 
 .fa-angle-down {
     color: var(--softred);

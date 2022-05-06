@@ -9,9 +9,11 @@
   --blue: hsl(240, 73%, 65%);
   --purple: hsl(273, 75%, 66%);
   --softred: hsl(14, 88%, 65%);
+  --bar: hsl(240, 5%, 91%);
 }
 
 body {
+  font-family: 'Kumbh Sans', sans-serif;
   min-height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(var(--purple)), to(var(--blue))) no-repeat;
   background: linear-gradient(var(--purple), var(--blue)) no-repeat;
@@ -24,26 +26,33 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 
 .hyper-container {
   padding: 2em;
   border-radius: 15px;
   background-color: white;
-  width: 50%;
+  width: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hyper-container .container-text {
   width: 50%;
+  height: 100%;
 }
 
 .hyper-container .container-text .ask {
+  border-bottom: 1px solid var(--bar);
   cursor: pointer;
 }
 
@@ -64,7 +73,13 @@ body {
 }
 
 .hyper-container .container-text .ask .container-answer {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .fa-angle-down {

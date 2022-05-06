@@ -8,6 +8,13 @@ allCross.forEach(element => {
 
     element.addEventListener('click', function(){
 
+        const removeVisible = [...document.querySelectorAll(".container-answer")]
+
+        removeVisible.forEach(element =>{
+            element.classList.remove("answerVisible");
+        })
+        
+
 
         const currentChoice = this.children[1];
 
