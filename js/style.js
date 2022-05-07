@@ -8,11 +8,11 @@ allCross.forEach(element => {
 
     element.addEventListener('click', function(){
 
-        const removeVisible = [...document.querySelectorAll(".container-answer")]
+        // const removeVisible = [...document.querySelectorAll(".container-answer")]
 
-        removeVisible.forEach(element =>{
-            element.classList.remove("answerVisible");
-        })
+        // removeVisible.forEach(element =>{
+        //     element.classList.remove("answerVisible");
+        // })
         
 
 

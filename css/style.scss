@@ -23,6 +23,7 @@ body {
     justify-content: center;
     font-size: 0.9rem;
     font-weight: 400;
+    z-index: -1;
     
 }
 
@@ -32,15 +33,20 @@ body {
     border-radius: 15px;
     background-color: white;
     width: 1000px;
-    
-
+    height: 534.6px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: relative;
     
     .container-text {
         width: 50%;
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+
         .ask {
             border-bottom: 1px solid var(--bar);
             cursor: pointer;
@@ -66,7 +72,11 @@ body {
     } 
 }
   
-
+.woman-desktop {
+    position: absolute;
+    left: -50px;
+    
+}
 
 h1 {
     font-weight: 700;
